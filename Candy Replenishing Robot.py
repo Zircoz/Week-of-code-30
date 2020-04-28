@@ -1,17 +1,14 @@
-import sys
+n, t = map(int, input().split(' '))
+c = input().split(' ')
+for i in range(0, len(c)):
+    c[i] = int(c[i])
 
-
-n,t = raw_input().strip().split(' ')
-n,t = [int(n),int(t)]
-c = map(int, raw_input().strip().split(' '))
-# your code goes here
 b=0
-bowl=n
+inbowl = n
 for i in range(t):
-    if i+1 !=t:
-        
-        bowl=bowl-c[i]
-        if bowl<5:
-            b=b+n-bowl
-            bowl=n
-print b
+    if i+1 !=t:        
+        inbowl=inbowl-c[i]
+        if inbowl<5:
+            b=b+n-inbowl
+            inbowl=n
+print(b)
