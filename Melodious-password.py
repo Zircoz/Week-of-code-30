@@ -21,5 +21,5 @@ def generate_answers(n):
 
 
 if __name__ == '__main__':
-    for answer in generate_answers(int(raw_input().strip())):
+    for answer in generate_answers(int(input())):
         print(''.join(answer))
